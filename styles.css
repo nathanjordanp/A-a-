@@ -1,0 +1,131 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d7bde2;
+}
+
+header {
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+.cover-photo {
+    width: 100%;
+    height: 200px;
+    background-image: url('https://i0.wp.com/blog.pixpel.com.br/wp-content/uploads/2022/04/como-vender-acai-no-copo-dados-de-mercado.jpg?w=1024&ssl=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-photo {
+    position: absolute;
+    top: 80px; 
+    left: 20px;
+    border: 5px solid #6c07be;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#cabeca {
+
+    background-color: transparent;
+    padding: 20px;
+    color: #fff;
+}
+
+
+#cabeca h1 {
+    margin-bottom: 20px;
+}
+
+
+#cabeca nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#cabeca nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+#cabeca nav ul li:last-child {
+    margin-right: 0; 
+}
+
+#produtos {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #000; /* Adiciona uma borda sólida de 2 pixels com a cor preta à imagem */
+}
+
+#contato
+{
+   margin: 1%;
+}
+#sobre
+{
+    margin: 1%;
+}
+#localizacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#container-form {
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+#produtos:target,
+#contato:target,
+#localizacao:target { /* Adicione :target para a classe .localizacao */
+    animation: scroll-animation 1s ease-in-out;
+}
+/* Defina a animação de rolagem */
+@keyframes scroll-animation {
+    from {
+        transform: translateY(-20px); /* Rolagem suave para cima */
+    }
+    to {
+        transform: translateY(0); /* Retornar à posição normal */
+    }
+}
